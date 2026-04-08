@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion'
 import { Filter, Grid, List } from 'lucide-react'
+import { useCart } from '../hooks/useCart'
 
 const Products = () => {
+  const { addItem } = useCart()
   const products = [
     { id: 1, title: 'KINETIC CORE TEE', price: 'R$ 189,90', category: 'Camisetas', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDLy5bBGtwLJwtvYZCchceU7dkgTzJ4yd24roK2QJb4H1NxE1hyk7Q3qXMhnowj8-stbLI7kKl1bKkIhAadcqqVsGW4ZN_JHL6n_YXWknUKvjyez0VCjZ1RFuzUbJxsfCggC2z6u7KVBCQx1UINDZGczRdwHNs0kLWUS4A5zdFN1HX1lqrSSjqZh0y0cgcvFjoYemLLQtb4dlrPNOtGu3fgKT9RZVMRgiLfLGQc4oHqNIKCfEX5_jyZRQwKhMm8rDLdlUxhwgPicYc' },
     { id: 2, title: 'ARCHITECT TEE', price: 'R$ 159,90', category: 'Camisetas', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDtTXwUITEEo_KpzGR44lnLKbOiwyfLkGFjm25PhJ2f3P-stL7cHUgvmBOnbm1A1eyB75iG-seRIFLEWh7ntg6Vk2pVb3KJa-dd9LKVD2GSUbNM4BZk8Wbvt1ZvQp-VAhIRRS6ORx9fPZYRfkSaMlDcgVaJK-aWzWuvYjoPTFShnQIlg-CBp-xzHujpYjWs8l4wPw_fjJOJWgZIakUoTfS1EPkv-F7wG_0TSXde6uziH6qp_yahQEWcRCUAP-YYj1b5By8XUp5Km4E' },
@@ -44,7 +46,13 @@ const Products = () => {
                 alt={prod.title} 
               />
               <div className="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                <button className="w-full bg-white text-on-background font-label font-bold py-4 rounded-xl shadow-2xl">
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    addItem(prod)
+                  }}
+                  className="w-full bg-white text-on-background font-label font-bold py-4 rounded-xl shadow-2xl"
+                >
                   Quick Add +
                 </button>
               </div>

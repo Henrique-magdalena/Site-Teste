@@ -1,19 +1,21 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { useCart } from '../hooks/useCart'
 
 const Home = () => {
+  const { addItem } = useCart()
   const categories = [
-    { name: 'Masculino', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAlxk7rSVlcdZnHq1MRgvbd8EXFm0kcBgSVPdyqyr8OFajUhCEaiStG7FJCTMwSnSknwk0a67e0AfkoqxLFVHmm5PEkFxbFQe-I8qlXCWabJCJW8Iz71xTKvpwl36vz1ES2QEmmXCp-VUsGex7S8I0agT4Ao6on9WUBrrQns3CL0g_maVqhkxUh3JdWgj0KfzLxekfbPp4uy8wFQLtgqEm8reErZrta1FX-0iBgthtHjL9nBWOJldBWk5mIwGQ3LHebB36E7JmQOQA' },
-    { name: 'Feminino', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAqDrvklNP7Yq7QiGlAnogA3yDJZf97I6s8LLjPvwevn1NxmsMEoZfFm9YVpH4bP4YX9PVeSptNAgSeOAblHNC56cOz0VY1BY_4NazHBXU0BZenX_grtLZFpzpgLqdSyHu4fjGwB4DUWD0BKMVzB4hvDe2yr1UDU7AxISzY5k6YaSWLaorqe4JH1s3ksE_6vK6IMvMadm7PkSTKP2XVM3ZmjTcy0hQ-9GnePYCXt7bbHoqQw7m-wqExF2I5rUyBiPaRSuJRrulyq24' },
-    { name: 'Infantil', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDUIF6WzbAuYQdHQcIbFC4BwOy_qp2MJOEVixYyBRMPO_j0scF5aJGD6PI9MsYFYeNEtUXJmUOqC6N8rlnm6EElPUFUc4mHxBv033riU1TK6HZzLa4WrWPUT1TeeCeDKJxMcI6JGqjG8RCKByrijFqvzw5wdJY_qb5_PgdNRy77OAfFn-2zf3IWZu2sfNawDc3fpRt6Fx1FjWUf4uTBdSAlvUBbnlUvNWzSWOF3UPVBEkFutXwKlyxP7JIQB6mUFY0PEy2jLQINQtM' },
-    { name: 'Impresso', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD-83WAfQuzNFe8hKajSNFwhNxzvGsXrgKsUzIMj3CZonDjl5FyW5ceTnEBVb4mNi5arZMLD-e3e_TY9hmDlHSKK2UX8m5FaG4wQ4NmKE_hARyWIPVUVisO-0poJeFm9brlFqovsLbksObT1Qufm0Ht8YTioHfbw-uXxGTQ-yjJNN6TOav2U-5QpP8sLYaEfw53j9WCj4ZUDmZRLarcG8VflL-No8eBCPJV0Rgy0fRu31bpdAOzf0kjJacgj4W1O_M4gvCkX3l0XCY' },
-    { name: 'Básico', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAwoSvtM8pNRAANFaRJozDrB9jewRbPwVcvHOpQllZhCVFFoxyUs9P07feRfMceeCCPf4vRzevypAFnayon0p7rOnAadxfyXfxMy1ZiFZfEgVFAZgH7ic3QcHlTqGqGvI6T6FJx4sVy-TiHf3mux-jZTGMoF4ynep1AutiPeYWwVVjni3EIiziaOm3h5gUAt-LDL4VUpUFHx2bMT1Y_TFs0bLZdYeHthav3irSB9Gtz2_PDa2v8HfuumGDAQ13TngoRj2oNdLxAuqg' },
+    { id: 'cat1', name: 'Masculino', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAlxk7rSVlcdZnHq1MRgvbd8EXFm0kcBgSVPdyqyr8OFajUhCEaiStG7FJCTMwSnSknwk0a67e0AfkoqxLFVHmm5PEkFxbFQe-I8qlXCWabJCJW8Iz71xTKvpwl36vz1ES2QEmmXCp-VUsGex7S8I0agT4Ao6on9WUBrrQns3CL0g_maVqhkxUh3JdWgj0KfzLxekfbPp4uy8wFQLtgqEm8reErZrta1FX-0iBgthtHjL9nBWOJldBWk5mIwGQ3LHebB36E7JmQOQA' },
+    { id: 'cat2', name: 'Feminino', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAqDrvklNP7Yq7QiGlAnogA3yDJZf97I6s8LLjPvwevn1NxmsMEoZfFm9YVpH4bP4YX9PVeSptNAgSeOAblHNC56cOz0VY1BY_4NazHBXU0BZenX_grtLZFpzpgLqdSyHu4fjGwB4DUWD0BKMVzB4hvDe2yr1UDU7AxISzY5k6YaSWLaorqe4JH1s3ksE_6vK6IMvMadm7PkSTKP2XVM3ZmjTcy0hQ-9GnePYCXt7bbHoqQw7m-wqExF2I5rUyBiPaRSuJRrulyq24' },
+    { id: 'cat3', name: 'Infantil', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDUIF6WzbAuYQdHQcIbFC4BwOy_qp2MJOEVixYyBRMPO_j0scF5aJGD6PI9MsYFYeNEtUXJmUOqC6N8rlnm6EElPUFUc4mHxBv033riU1TK6HZzLa4WrWPUT1TeeCeDKJxMcI6JGqjG8RCKByrijFqvzw5wdJY_qb5_PgdNRy77OAfFn-2zf3IWZu2sfNawDc3fpRt6Fx1FjWUf4uTBdSAlvUBbnlUvNWzSWOF3UPVBEkFutXwKlyxP7JIQB6mUFY0PEy2jLQINQtM' },
+    { id: 'cat4', name: 'Impresso', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD-83WAfQuzNFe8hKajSNFwhNxzvGsXrgKsUzIMj3CZonDjl5FyW5ceTnEBVb4mNi5arZMLD-e3e_TY9hmDlHSKK2UX8m5FaG4wQ4NmKE_hARyWIPVUVisO-0poJeFm9brlFqovsLbksObT1Qufm0Ht8YTioHfbw-uXxGTQ-yjJNN6TOav2U-5QpP8sLYaEfw53j9WCj4ZUDmZRLarcG8VflL-No8eBCPJV0Rgy0fRu31bpdAOzf0kjJacgj4W1O_M4gvCkX3l0XCY' },
+    { id: 'cat5', name: 'Básico', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAwoSvtM8pNRAANFaRJozDrB9jewRbPwVcvHOpQllZhCVFFoxyUs9P07feRfMceeCCPf4vRzevypAFnayon0p7rOnAadxfyXfxMy1ZiFZfEgVFAZgH7ic3QcHlTqGqGvI6T6FJx4sVy-TiHf3mux-jZTGMoF4ynep1AutiPeYWwVVjni3EIiziaOm3h5gUAt-LDL4VUpUFHx2bMT1Y_TFs0bLZdYeHthav3irSB9Gtz2_PDa2v8HfuumGDAQ13TngoRj2oNdLxAuqg' },
   ]
 
   const featuredProducts = [
-    { title: 'KINETIC CORE TEE', price: 'R$ 189,90', tag: 'LIMITED', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDLy5bBGtwLJwtvYZCchceU7dkgTzJ4yd24roK2QJb4H1NxE1hyk7Q3qXMhnowj8-stbLI7kKl1bKkIhAadcqqVsGW4ZN_JHL6n_YXWknUKvjyez0VCjZ1RFuzUbJxsfCggC2z6u7KVBCQx1UINDZGczRdwHNs0kLWUS4A5zdFN1HX1lqrSSjqZh0y0cgcvFjoYemLLQtb4dlrPNOtGu3fgKT9RZVMRgiLfLGQc4oHqNIKCfEX5_jyZRQwKhMm8rDLdlUxhwgPicYc' },
-    { title: 'ARCHITECT TEE', price: 'R$ 159,90', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDtTXwUITEEo_KpzGR44lnLKbOiwyfLkGFjm25PhJ2f3P-stL7cHUgvmBOnbm1A1eyB75iG-seRIFLEWh7ntg6Vk2pVb3KJa-dd9LKVD2GSUbNM4BZk8Wbvt1ZvQp-VAhIRRS6ORx9fPZYRfkSaMlDcgVaJK-aWzWuvYjoPTFShnQIlg-CBp-xzHujpYjWs8l4wPw_fjJOJWgZIakUoTfS1EPkv-F7wG_0TSXde6uziH6qp_yahQEWcRCUAP-YYj1b5By8XUp5Km4E' },
-    { title: 'FLUID BLUE TEE', price: 'R$ 149,90', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuChiNPVE14VFPCLezgSC6cPOHZJIGUU_IKUNLpjz4cbxlltcraa3SgK6TEYyVSIfSd_ryKghAJtFL3_rcSN1Opw_bqeaE0dJY4PB_XQWpll5TbKZkF4pRNO1b-u02G-a5qj9bdhOfjuWnptDqr1BhkWjcgtcK_V2tv-P02WJPlrGsIWBCFYcYpm2Kf3vdsH4s2TYqTfNHLKlpuqKis-FjhHov8YfEsJrSzEeRidgY09X28UfmGjqxoetChuP49n06hsQGBLOQXaP1k' },
+    { id: 1, title: 'KINETIC CORE TEE', price: 'R$ 189,90', tag: 'LIMITED', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDLy5bBGtwLJwtvYZCchceU7dkgTzJ4yd24roK2QJb4H1NxE1hyk7Q3qXMhnowj8-stbLI7kKl1bKkIhAadcqqVsGW4ZN_JHL6n_YXWknUKvjyez0VCjZ1RFuzUbJxsfCggC2z6u7KVBCQx1UINDZGczRdwHNs0kLWUS4A5zdFN1HX1lqrSSjqZh0y0cgcvFjoYemLLQtb4dlrPNOtGu3fgKT9RZVMRgiLfLGQc4oHqNIKCfEX5_jyZRQwKhMm8rDLdlUxhwgPicYc' },
+    { id: 2, title: 'ARCHITECT TEE', price: 'R$ 159,90', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDtTXwUITEEo_KpzGR44lnLKbOiwyfLkGFjm25PhJ2f3P-stL7cHUgvmBOnbm1A1eyB75iG-seRIFLEWh7ntg6Vk2pVb3KJa-dd9LKVD2GSUbNM4BZk8Wbvt1ZvQp-VAhIRRS6ORx9fPZYRfkSaMlDcgVaJK-aWzWuvYjoPTFShnQIlg-CBp-xzHujpYjWs8l4wPw_fjJOJWgZIakUoTfS1EPkv-F7wG_0TSXde6uziH6qp_yahQEWcRCUAP-YYj1b5By8XUp5Km4E' },
+    { id: 3, title: 'FLUID BLUE TEE', price: 'R$ 149,90', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuChiNPVE14VFPCLezgSC6cPOHZJIGUU_IKUNLpjz4cbxlltcraa3SgK6TEYyVSIfSd_ryKghAJtFL3_rcSN1Opw_bqeaE0dJY4PB_XQWpll5TbKZkF4pRNO1b-u02G-a5qj9bdhOfjuWnptDqr1BhkWjcgtcK_V2tv-P02WJPlrGsIWBCFYcYpm2Kf3vdsH4s2TYqTfNHLKlpuqKis-FjhHov8YfEsJrSzEeRidgY09X28UfmGjqxoetChuP49n06hsQGBLOQXaP1k' },
   ]
 
   return (
@@ -137,7 +139,10 @@ const Home = () => {
                 </div>
                 <p className="font-headline font-bold text-primary">{prod.price}</p>
               </div>
-              <button className="mt-6 w-full py-4 rounded-full bg-surface-container-high text-on-surface font-label font-bold uppercase text-xs tracking-widest hover:bg-primary hover:text-white transition-colors">
+              <button 
+                onClick={() => addItem(prod)}
+                className="mt-6 w-full py-4 rounded-full bg-surface-container-high text-on-surface font-label font-bold uppercase text-xs tracking-widest hover:bg-primary hover:text-white transition-colors"
+              >
                 Comprar
               </button>
             </motion.div>
