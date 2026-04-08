@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&amp;family=Manrope:wght@400;500;600&amp;family=Be+Vietnam+Pro:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#2f0e00",
+              "tertiary-fixed": "#ff9560",
+              "on-secondary": "#f4f1ff",
+              "surface-tint": "#0846ed",
+              "secondary-container": "#cfcdff",
+              "on-tertiary": "#fff0ea",
+              "on-primary-fixed": "#000000",
+              "primary-container": "#859aff",
+              "error-container": "#f74b6d",
+              "on-background": "#2b2a51",
+              "inverse-surface": "#0a082f",
+              "on-error-container": "#510017",
+              "surface-container-lowest": "#ffffff",
+              "inverse-primary": "#6d88ff",
+              "primary": "#0846ed",
+              "surface-dim": "#d2d0ff",
+              "error-dim": "#a70138",
+              "on-primary-container": "#001867",
+              "primary-dim": "#003cd3",
+              "on-tertiary-fixed-variant": "#652600",
+              "tertiary-dim": "#893600",
+              "tertiary": "#9c3f00",
+              "surface-container-low": "#f2efff",
+              "surface-container-high": "#e2dfff",
+              "surface": "#f9f5ff",
+              "background": "#f9f5ff",
+              "on-tertiary-container": "#571f00",
+              "tertiary-container": "#ff9560",
+              "secondary-fixed": "#cfcdff",
+              "surface-container": "#e9e5ff",
+              "tertiary-fixed-dim": "#ff7f39",
+              "inverse-on-surface": "#9a99c6",
+              "on-secondary-container": "#3c38a1",
+              "surface-variant": "#dcd9ff",
+              "surface-container-highest": "#dcd9ff",
+              "on-secondary-fixed": "#28218d",
+              "on-surface": "#2b2a51",
+              "on-primary": "#f2f1ff",
+              "on-error": "#ffefef",
+              "on-primary-fixed-variant": "#00207e",
+              "surface-bright": "#f9f5ff",
+              "primary-fixed-dim": "#718bff",
+              "outline": "#74739e",
+              "error": "#b41340",
+              "secondary-dim": "#4541a9",
+              "outline-variant": "#aba9d7",
+              "on-surface-variant": "#585781",
+              "primary-fixed": "#859aff",
+              "secondary-fixed-dim": "#bfbdff",
+              "secondary": "#514eb6",
+              "on-secondary-fixed-variant": "#4642aa"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #0846ed 0%, #859aff 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+        }
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-indigo-50/70 dark:bg-slate-950/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<a class="text-2xl font-black italic text-indigo-900 dark:text-indigo-100 font-headline tracking-tight" href="#">KINETIC</a>
+<div class="hidden md:flex items-center gap-6 font-headline font-bold tracking-tight">
+<a class="text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 pb-1 transition-all duration-300 hover:opacity-80" href="index.html">Início</a>
+<a class="text-indigo-900/60 dark:text-indigo-100/60 hover:text-blue-600 transition-all duration-300" href="produto.html">Produtos</a>
+<a class="text-indigo-900/60 dark:text-indigo-100/60 hover:text-blue-600 transition-all duration-300" href="contato.html">Contato</a>
+<a class="text-indigo-900/60 dark:text-indigo-100/60 hover:text-blue-600 transition-all duration-300" href="dashboard.html">Dashboard (Admin)</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="transition-transform scale-95 active:scale-90 text-indigo-900/60 hover:text-blue-600">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="transition-transform scale-95 active:scale-90 text-indigo-900/60 hover:text-blue-600">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: Editorial Impact -->
+<section class="relative px-6 py-12 max-w-7xl mx-auto">
+<div class="asymmetric-grid gap-8 items-center">
+<div class="col-span-12 md:col-span-7 relative z-10">
+<h1 class="font-headline font-extrabold text-6xl md:text-8xl leading-none tracking-tighter text-on-surface mb-6">
+                        MOVIMENTO <br/>
+<span class="text-primary italic">URBANO</span>
+</h1>
+<p class="text-on-surface-variant text-xl max-w-md mb-8 leading-relaxed">
+                        Curadoria premium de streetwear que une a fluidez do design contemporâneo com a energia das ruas.
+                    </p>
+<div class="flex gap-4">
+<a href="produto.html" class="kinetic-gradient text-white font-label font-bold uppercase tracking-wider px-10 py-4 rounded-full transition-transform hover:scale-105 active:scale-95 shadow-lg inline-flex justify-center items-center">
+                            Ver Coleção
+                        </a>
+<a href="produto.html" class="bg-surface-container-high text-primary font-label font-bold uppercase tracking-wider px-10 py-4 rounded-full transition-transform hover:scale-105 active:scale-95 inline-flex justify-center items-center">
+                            Básicos
+                        </a>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Fashion portrait of a young man wearing a premium oversized black t-shirt in a minimalist concrete urban setting, editorial style lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqN00zy8vZY3fD7WS7HjMirUgPNDxi-QVmM_M1JzZh1BS8HLBnL2_aNec1q2zY8p0P5m1UrDbWhgwAyvt9n6-V3wRRUkXiadOfe5gPe3UA4NLMFi4IPt22bgeV3Tuk_EYRe0CtMovVFzOMSxDUUhuUbtga2Sn0zJSdI9GYBiI2mDnGIPldttlt1PP0j9YQisHk8DNU8PK4KZKwF3P0n2dearg56OTEFqFWGz8ynu7LYhD0HRcoGCyqTJg95n0izl9U6oUMAoKUEfA"/>
+</div>
+<!-- Overlapping Aesthetic Element -->
+<div class="absolute -bottom-6 -left-6 bg-tertiary text-white px-6 py-3 rounded-xl font-label font-bold text-sm transform -rotate-3 shadow-xl">
+                        NEW DROP: KINETIC 24'
+                    </div>
+</div>
+</div>
+</section>
+<!-- Categories: Tonal Shifts -->
+<section class="bg-surface-container-low py-20 mt-12">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex items-end justify-between mb-12">
+<div>
+<span class="font-label text-primary font-bold uppercase tracking-widest text-xs">Explore</span>
+<h2 class="font-headline font-bold text-4xl text-on-surface mt-2">Categorias</h2>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+<!-- Category Chips/Cards -->
+<button class="group relative overflow-hidden aspect-square rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all">
+<div class="absolute inset-0 bg-indigo-900/10 group-hover:bg-indigo-900/0 transition-colors"></div>
+<img class="w-full h-full object-cover" data-alt="Close up of high quality white cotton t-shirt fabric texture and minimalist design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlxk7rSVlcdZnHq1MRgvbd8EXFm0kcBgSVPdyqyr8OFajUhCEaiStG7FJCTMwSnSknwk0a67e0AfkoqxLFVHmm5PEkFxbFQe-I8qlXCWabJCJW8Iz71xTKvpwl36vz1ES2QEmmXCp-VUsGex7S8I0agT4Ao6on9WUBrrQns3CL0g_maVqhkxUh3JdWgj0KfzLxekfbPp4uy8wFQLtgqEm8reErZrta1FX-0iBgthtHjL9nBWOJldBWk5mIwGQ3LHebB36E7JmQOQA"/>
+<span class="absolute bottom-4 left-4 font-headline font-bold text-on-surface bg-white/90 backdrop-blur px-3 py-1 rounded-lg">Masculino</span>
+</button>
+<button class="group relative overflow-hidden aspect-square rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all">
+<img class="w-full h-full object-cover" data-alt="Stylish woman wearing an oversized aesthetic streetwear t-shirt in a bright studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqDrvklNP7Yq7QiGlAnogA3yDJZf97I6s8LLjPvwevn1NxmsMEoZfFm9YVpH4bP4YX9PVeSptNAgSeOAblHNC56cOz0VY1BY_4NazHBXU0BZenX_grtLZFpzpgLqdSyHu4fjGwB4DUWD0BKMVzB4hvDe2yr1UDU7AxISzY5k6YaSWLaorqe4JH1s3ksE_6vK6IMvMadm7PkSTKP2XVM3ZmjTcy0hQ-9GnePYCXt7bbHoqQw7m-wqExF2I5rUyBiPaRSuJRrulyq24"/>
+<span class="absolute bottom-4 left-4 font-headline font-bold text-on-surface bg-white/90 backdrop-blur px-3 py-1 rounded-lg">Feminino</span>
+</button>
+<button class="group relative overflow-hidden aspect-square rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all">
+<img class="w-full h-full object-cover" data-alt="Kid wearing a cool street style t-shirt jumping against a colorful urban wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUIF6WzbAuYQdHQcIbFC4BwOy_qp2MJOEVixYyBRMPO_j0scF5aJGD6PI9MsYFYeNEtUXJmUOqC6N8rlnm6EElPUFUc4mHxBv033riU1TK6HZzLa4WrWPUT1TeeCeDKJxMcI6JGqjG8RCKByrijFqvzw5wdJY_qb5_PgdNRy77OAfFn-2zf3IWZu2sfNawDc3fpRt6Fx1FjWUf4uTBdSAlvUBbnlUvNWzSWOF3UPVBEkFutXwKlyxP7JIQB6mUFY0PEy2jLQINQtM"/>
+<span class="absolute bottom-4 left-4 font-headline font-bold text-on-surface bg-white/90 backdrop-blur px-3 py-1 rounded-lg">Infantil</span>
+</button>
+<button class="group relative overflow-hidden aspect-square rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all">
+<img class="w-full h-full object-cover" data-alt="Detailed graphic print on a black t-shirt showing modern typography art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-83WAfQuzNFe8hKajSNFwhNxzvGsXrgKsUzIMj3CZonDjl5FyW5ceTnEBVb4mNi5arZMLD-e3e_TY9hmDlHSKK2UX8m5FaG4wQ4NmKE_hARyWIPVUVisO-0poJeFm9brlFqovsLbksObT1Qufm0Ht8YTioHfbw-uXxGTQ-yjJNN6TOav2U-5QpP8sLYaEfw53j9WCj4ZUDmZRLarcG8VflL-No8eBCPJV0Rgy0fRu31bpdAOzf0kjJacgj4W1O_M4gvCkX3l0XCY"/>
+<span class="absolute bottom-4 left-4 font-headline font-bold text-on-surface bg-white/90 backdrop-blur px-3 py-1 rounded-lg">Impresso</span>
+</button>
+<button class="group relative overflow-hidden aspect-square rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all">
+<img class="w-full h-full object-cover" data-alt="Minimalist row of solid colored basic t-shirts hanging on a wooden rack" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwoSvtM8pNRAANFaRJozDrB9jewRbPwVcvHOpQllZhCVFFoxyUs9P07feRfMceeCCPf4vRzevypAFnayon0p7rOnAadxfyXfxMy1ZiFZfEgVFAZgH7ic3QcHlTqGqGvI6T6FJx4sVy-TiHf3mux-jZTGMoF4ynep1AutiPeYWwVVjni3EIiziaOm3h5gUAt-LDL4VUpUFHx2bMT1Y_TFs0bLZdYeHthav3irSB9Gtz2_PDa2v8HfuumGDAQ13TngoRj2oNdLxAuqg"/>
+<span class="absolute bottom-4 left-4 font-headline font-bold text-on-surface bg-white/90 backdrop-blur px-3 py-1 rounded-lg">Básico</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Featured Products: The Lookbook Grid -->
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="font-headline font-extrabold text-5xl text-on-surface tracking-tighter">
+                    FEATURED <span class="text-outline-variant font-normal">DROP</span>
+</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Product Card 1 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low mb-8 relative">
+<div class="absolute top-4 right-4 z-10">
+<span class="bg-tertiary text-white text-[10px] font-label font-bold px-2 py-1 rounded-full">LIMITED</span>
+</div>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Premium black t-shirt with subtle futuristic chest logo, studio lighting on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLy5bBGtwLJwtvYZCchceU7dkgTzJ4yd24roK2QJb4H1NxE1hyk7Q3qXMhnowj8-stbLI7kKl1bKkIhAadcqqVsGW4ZN_JHL6n_YXWknUKvjyez0VCjZ1RFuzUbJxsfCggC2z6u7KVBCQx1UINDZGczRdwHNs0kLWUS4A5zdFN1HX1lqrSSjqZh0y0cgcvFjoYemLLQtb4dlrPNOtGu3fgKT9RZVMRgiLfLGQc4oHqNIKCfEX5_jyZRQwKhMm8rDLdlUxhwgPicYc"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-1">KINETIC CORE TEE</h3>
+<p class="font-label text-on-surface-variant text-sm">BLACK / OVERSIZED</p>
+</div>
+<p class="font-headline font-bold text-primary">R$ 189,90</p>
+</div>
+<button class="mt-6 w-full py-4 rounded-full bg-surface-container-high text-on-surface font-label font-bold uppercase text-xs tracking-widest hover:bg-primary hover:text-white transition-colors">
+                        Comprar
+                    </button>
+</div>
+<!-- Product Card 2 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low mb-8 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="White premium cotton t-shirt with minimalist architectural graphic on back, sunlit outdoor aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtTXwUITEEo_KpzGR44lnLKbOiwyfLkGFjm25PhJ2f3P-stL7cHUgvmBOnbm1A1eyB75iG-seRIFLEWh7ntg6Vk2pVb3KJa-dd9LKVD2GSUbNM4BZk8Wbvt1ZvQp-VAhIRRS6ORx9fPZYRfkSaMlDcgVaJK-aWzWuvYjoPTFShnQIlg-CBp-xzHujpYjWs8l4wPw_fjJOJWgZIakUoTfS1EPkv-F7wG_0TSXde6uziH6qp_yahQEWcRCUAP-YYj1b5By8XUp5Km4E"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-1">ARCHITECT TEE</h3>
+<p class="font-label text-on-surface-variant text-sm">WHITE / HEAVY COTTON</p>
+</div>
+<p class="font-headline font-bold text-primary">R$ 159,90</p>
+</div>
+<button class="mt-6 w-full py-4 rounded-full bg-surface-container-high text-on-surface font-label font-bold uppercase text-xs tracking-widest hover:bg-primary hover:text-white transition-colors">
+                        Comprar
+                    </button>
+</div>
+<!-- Product Card 3 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low mb-8 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Electric blue t-shirt with subtle kinetic wave embroidery, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChiNPVE14VFPCLezgSC6cPOHZJIGUU_IKUNLpjz4cbxlltcraa3SgK6TEYyVSIfSd_ryKghAJtFL3_rcSN1Opw_bqeaE0dJY4PB_XQWpll5TbKZkF4pRNO1b-u02G-a5qj9bdhOfjuWnptDqr1BhkWjcgtcK_V2tv-P02WJPlrGsIWBCFYcYpm2Kf3vdsH4s2TYqTfNHLKlpuqKis-FjhHov8YfEsJrSzEeRidgY09X28UfmGjqxoetChuP49n06hsQGBLOQXaP1k"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-1">FLUID BLUE TEE</h3>
+<p class="font-label text-on-surface-variant text-sm">ELECTRIC BLUE / SLIM</p>
+</div>
+<p class="font-headline font-bold text-primary">R$ 149,90</p>
+</div>
+<button class="mt-6 w-full py-4 rounded-full bg-surface-container-high text-on-surface font-label font-bold uppercase text-xs tracking-widest hover:bg-primary hover:text-white transition-colors">
+                        Comprar
+                    </button>
+</div>
+</div>
+</section>
+<!-- Aesthetic Banner: High Energy -->
+<section class="relative h-[614px] overflow-hidden flex items-center">
+<div class="absolute inset-0 bg-indigo-900">
+<img class="w-full h-full object-cover opacity-40" data-alt="Cinematic wide shot of high-end streetwear warehouse with dramatic neon lighting and industrial aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxMdyiQTg2e3-P7dh6FcExu36L2ssGPIpCQ9LGhHRRWvlDgPClTgIAYQ6CvqEbA03aJtu7QBcVpoENJdbmt9LPdtb5nLAk-QpQwbPr0leG4NmqLJrQcTNgecZBdYNsBakhEobxfcg04FifnYrKaRLHC5W-2Dgd7tUFr6lQIIcZoe7bccCocmH386x7LynHbphl0bbQHckyY3Xi_HUEvmQcV_DY4FXLzXur9xHb2TKN_2sRUvJ7Mvn6P3tjwDLi9b3-pAE0JnAEylY"/>
+</div>
+<div class="relative max-w-7xl mx-auto px-6 w-full">
+<div class="max-w-2xl">
+<h2 class="font-headline font-extrabold text-5xl md:text-7xl text-white tracking-tighter leading-none mb-6">
+                        QUALIDADE QUE <br/> <span class="italic text-primary-container">PERMANECE.</span>
+</h2>
+<p class="text-indigo-100/70 text-lg mb-8 font-body">
+                        Algodão 100% sustentável com gramatura pesada para garantir o caimento perfeito que você busca.
+                    </p>
+<button class="bg-white text-indigo-900 font-label font-bold px-8 py-4 rounded-full hover:bg-primary hover:text-white transition-all">
+                        Nossa História
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 bg-indigo-900 dark:bg-slate-950 flex flex-col items-center gap-4 py-12 px-6">
+<div class="flex flex-col items-center gap-6 max-w-7xl w-full">
+<div class="text-lg font-bold text-white font-headline">KINETIC</div>
+<div class="flex gap-8">
+<a class="text-indigo-200/50 hover:text-orange-500 transition-colors font-label text-xs uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-indigo-200/50 hover:text-orange-500 transition-colors font-label text-xs uppercase tracking-widest" href="#">Terms of Service</a>
+<a class="text-indigo-200/50 hover:text-orange-500 transition-colors font-label text-xs uppercase tracking-widest" href="#">Shipping</a>
+</div>
+<div class="flex gap-4 mt-4">
+<span class="material-symbols-outlined text-white/40 cursor-pointer hover:text-white transition-colors">public</span>
+<span class="material-symbols-outlined text-white/40 cursor-pointer hover:text-white transition-colors">camera</span>
+<span class="material-symbols-outlined text-white/40 cursor-pointer hover:text-white transition-colors">chat</span>
+</div>
+<p class="text-indigo-200/50 font-label text-[10px] uppercase tracking-widest mt-8">© 2024 KINETIC STREETWEAR. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<!-- SideNavBar (Simulated Mobile Side Shell) -->
+<aside class="hidden fixed left-0 top-0 h-full w-64 bg-indigo-50 dark:bg-slate-950 rounded-r-3xl z-[60] flex-col py-8 shadow-2xl transition-transform transform -translate-x-full lg:translate-x-0 lg:hidden">
+<div class="px-6 mb-12">
+<h2 class="text-xl font-black text-indigo-900 dark:text-indigo-100 font-headline">KINETIC</h2>
+<p class="text-xs font-semibold text-indigo-900/40 uppercase tracking-widest">Editorial Streetwear</p>
+</div>
+<div class="flex flex-col flex-1">
+<a class="bg-blue-600 text-white rounded-xl mx-2 px-4 py-3 flex items-center gap-3 font-label" href="#">
+<span class="material-symbols-outlined">home</span> Início
+            </a>
+<a class="text-indigo-900/70 dark:text-indigo-100/70 px-4 py-3 flex items-center gap-3 font-label hover:bg-indigo-100 transition-all" href="#">
+<span class="material-symbols-outlined">dry_cleaning</span> Produtos
+            </a>
+<a class="text-indigo-900/70 dark:text-indigo-100/70 px-4 py-3 flex items-center gap-3 font-label hover:bg-indigo-100 transition-all" href="#">
+<span class="material-symbols-outlined">category</span> Categoria
+            </a>
+</div>
+<div class="px-4 mt-auto">
+<button class="w-full kinetic-gradient text-white font-label font-bold py-4 rounded-xl">Shop Now</button>
+<div class="flex flex-col gap-2 mt-6">
+<a class="text-xs font-semibold text-indigo-900/40 px-2 flex items-center gap-2" href="#"><span class="material-symbols-outlined text-sm">settings</span> Settings</a>
+<a class="text-xs font-semibold text-indigo-900/40 px-2 flex items-center gap-2" href="#"><span class="material-symbols-outlined text-sm">help</span> Support</a>
+</div>
+</div>
+</aside>
+</body></html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Manrope:wght@400;500;700&amp;family=Be_Vietnam_Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#cfcdff",
+              "surface": "#f9f5ff",
+              "surface-container-high": "#e2dfff",
+              "primary-fixed": "#859aff",
+              "on-secondary-fixed-variant": "#4642aa",
+              "secondary": "#514eb6",
+              "on-secondary-fixed": "#28218d",
+              "surface-container-low": "#f2efff",
+              "on-error-container": "#510017",
+              "on-primary-container": "#001867",
+              "surface-variant": "#dcd9ff",
+              "surface-tint": "#0846ed",
+              "outline": "#74739e",
+              "surface-dim": "#d2d0ff",
+              "tertiary-fixed-dim": "#ff7f39",
+              "background": "#f9f5ff",
+              "surface-container-highest": "#dcd9ff",
+              "on-error": "#ffefef",
+              "tertiary-container": "#ff9560",
+              "tertiary-dim": "#893600",
+              "on-surface-variant": "#585781",
+              "primary-container": "#859aff",
+              "inverse-on-surface": "#9a99c6",
+              "inverse-primary": "#6d88ff",
+              "outline-variant": "#aba9d7",
+              "inverse-surface": "#0a082f",
+              "on-primary": "#f2f1ff",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#cfcdff",
+              "secondary-fixed-dim": "#bfbdff",
+              "on-tertiary": "#fff0ea",
+              "surface-container": "#e9e5ff",
+              "on-tertiary-fixed": "#2f0e00",
+              "tertiary": "#9c3f00",
+              "on-tertiary-container": "#571f00",
+              "primary-fixed-dim": "#718bff",
+              "primary-dim": "#003cd3",
+              "on-tertiary-fixed-variant": "#652600",
+              "error": "#b41340",
+              "on-primary-fixed-variant": "#00207e",
+              "on-background": "#2b2a51",
+              "error-container": "#f74b6d",
+              "secondary-dim": "#4541a9",
+              "on-primary-fixed": "#000000",
+              "on-surface": "#2b2a51",
+              "surface-bright": "#f9f5ff",
+              "on-secondary": "#f4f1ff",
+              "primary": "#0846ed",
+              "on-secondary-container": "#3c38a1",
+              "error-dim": "#a70138",
+              "tertiary-fixed": "#ff9560"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+        scroll-behavior: smooth;
+      }
+      .kinetic-gradient {
+        background: linear-gradient(135deg, #0846ed 0%, #859aff 100%);
+      }
+      .text-glow {
+        text-shadow: 0 0 20px rgba(8, 70, 237, 0.2);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f5ff]/70 backdrop-blur-xl flex justify-between items-center px-8 h-20 w-full transition-all duration-300">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black italic tracking-tighter text-[#2b2a51]">KINETIC</span>
+<div class="hidden md:flex items-center gap-6 font-['Plus_Jakarta_Sans'] font-bold tracking-tight">
+<a class="text-[#2b2a51] opacity-80 hover:text-[#0846ed] transition-colors duration-300 active:scale-95 transition-transform" href="#">Shop</a>
+<a class="text-[#2b2a51] opacity-80 hover:text-[#0846ed] transition-colors duration-300 active:scale-95 transition-transform" href="#">Lookbook</a>
+<a class="text-[#2b2a51] opacity-80 hover:text-[#0846ed] transition-colors duration-300 active:scale-95 transition-transform" href="#">Collections</a>
+<a class="text-[#2b2a51] opacity-80 hover:text-[#0846ed] transition-colors duration-300 active:scale-95 transition-transform" href="#">Archive</a>
+</div>
+</div>
+<div class="flex items-center gap-5">
+<button class="material-symbols-outlined text-[#2b2a51] hover:text-[#0846ed] transition-all">shopping_bag</button>
+<button class="material-symbols-outlined text-[#2b2a51] hover:text-[#0846ed] transition-all">person</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Header -->
+<section class="relative w-full py-24 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between relative z-10">
+<div class="max-w-2xl">
+<span class="font-label text-primary uppercase tracking-[0.3em] font-bold text-xs mb-4 block">Central de Conexão</span>
+<h1 class="font-headline text-6xl md:text-8xl font-black tracking-tighter text-on-background leading-none mb-6">
+                        FALE <br/> <span class="text-primary italic">CONOSCO</span>
+</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-md">
+                        Nossa equipe está em constante movimento para garantir que sua experiência KINETIC seja impecável. Envie sua dúvida ou sugestão.
+                    </p>
+</div>
+<div class="hidden lg:block absolute -right-20 top-0 w-1/2 h-full opacity-10 pointer-events-none">
+<span class="font-headline font-black text-[20rem] leading-none select-none">STREET</span>
+</div>
+</div>
+</section>
+<!-- Main Grid Section -->
+<section class="px-8 pb-32">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Contact Form Section -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-8 md:p-12">
+<div class="mb-10">
+<h2 class="font-headline text-2xl font-bold text-on-background mb-2">Envie uma Mensagem</h2>
+<div class="h-1 w-12 kinetic-gradient rounded-full"></div>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Nome Completo</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/30 transition-all font-body text-on-background placeholder:text-outline-variant" placeholder="Seu nome" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">E-mail</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/30 transition-all font-body text-on-background placeholder:text-outline-variant" placeholder="email@exemplo.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Assunto</label>
+<select class="w-full bg-surface-container-lowest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/30 transition-all font-body text-on-background appearance-none">
+<option>Dúvidas sobre Pedidos</option>
+<option>Trocas e Devoluções</option>
+<option>Sugestões e Parcerias</option>
+<option>Outros</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Mensagem</label>
+<textarea class="w-full bg-surface-container-lowest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/30 transition-all font-body text-on-background placeholder:text-outline-variant resize-none" placeholder="Como podemos ajudar?" rows="5"></textarea>
+</div>
+<button class="kinetic-gradient text-white font-label font-bold uppercase tracking-widest px-10 py-5 rounded-full hover:shadow-[0_12px_32px_rgba(8,70,237,0.3)] transition-all active:scale-95 flex items-center justify-center gap-3" type="submit">
+                            Enviar Mensagem
+                            <span class="material-symbols-outlined text-sm">send</span>
+</button>
+</form>
+</div>
+<!-- Info and Imagery Section -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Support Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="bg-surface-container p-6 rounded-xl border-b-2 border-primary/20 hover:border-primary transition-all group">
+<span class="material-symbols-outlined text-primary mb-4 block scale-125 group-hover:rotate-12 transition-transform">mail</span>
+<h3 class="font-headline font-bold text-on-background mb-1">E-mail</h3>
+<p class="font-body text-sm text-on-surface-variant">contato@kinetic.com</p>
+</div>
+<div class="bg-surface-container p-6 rounded-xl border-b-2 border-primary/20 hover:border-primary transition-all group">
+<span class="material-symbols-outlined text-primary mb-4 block scale-125 group-hover:rotate-12 transition-transform">chat</span>
+<h3 class="font-headline font-bold text-on-background mb-1">WhatsApp</h3>
+<p class="font-body text-sm text-on-surface-variant">+55 11 9999-9999</p>
+</div>
+</div>
+<!-- Contextual Imagery -->
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="industrial workshop interior with sewing machines and rolls of fabric in a modern minimalist apparel production studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASt0J8GjUo0LximkNYhvCAxf7LFL4llz6NguiVhTkP1qlJ7nog-efAxz4wyAH2dartVQ3IB0fyOoELfjdzsgX8dpBhpPgY4lWFVKxRSooHi5WxFZKxLu8JAolRf6LuO0qTxRGKK1MqKO99aW_lDS-vsIr-PqbkOG-TAUdywnsZGJWYu9W5-iU3JPLvBWk0bWadVCseCDq-hIJB-PcPzAI3M-R-bGeSw3NRZUC1rQ5l8LRWF_01Re0ZqjiI4Wl-8yyBeStBkArvDZk"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+<div class="absolute bottom-6 left-6 right-6 p-6 backdrop-blur-md bg-surface-container-lowest/80 rounded-lg">
+<p class="font-label text-xs text-primary font-bold uppercase tracking-widest mb-1">Social Media</p>
+<div class="flex gap-4">
+<a class="font-headline font-black text-on-background hover:text-primary transition-colors" href="#">INSTAGRAM</a>
+<a class="font-headline font-black text-on-background hover:text-primary transition-colors" href="#">TIKTOK</a>
+<a class="font-headline font-black text-on-background hover:text-primary transition-colors" href="#">TWITTER</a>
+</div>
+</div>
+</div>
+<!-- Location Mockup -->
+<div class="bg-surface-container-highest/30 p-6 rounded-xl flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-background">Studio KINETIC</h4>
+<p class="font-body text-sm text-on-surface-variant">Rua da Moda, 404 - São Paulo, SP</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="bg-surface-container-low py-32 px-8">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl md:text-5xl font-black tracking-tight text-on-background mb-4">DÚVIDAS FREQUENTES</h2>
+<p class="font-body text-on-surface-variant">Encontre respostas rápidas para os principais questionamentos da comunidade Kinetic.</p>
+</div>
+<div class="space-y-4">
+<!-- Accordion Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300">
+<button class="w-full px-8 py-6 flex justify-between items-center text-left hover:bg-surface-container-high transition-colors">
+<span class="font-headline font-bold text-lg text-on-background">Qual o prazo de entrega padrão?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="px-8 pb-6 text-on-surface-variant font-body leading-relaxed">
+                            Nossas entregas variam entre 3 a 7 dias úteis para capitais e 10 a 15 dias úteis para demais localidades. Todas as peças saem de nosso centro de distribuição em São Paulo com rastreamento em tempo real.
+                        </div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300">
+<button class="w-full px-8 py-6 flex justify-between items-center text-left hover:bg-surface-container-high transition-colors">
+<span class="font-headline font-bold text-lg text-on-background">Como funciona a política de trocas?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="px-8 pb-6 text-on-surface-variant font-body leading-relaxed">
+                            Oferecemos a primeira troca grátis em até 30 dias após o recebimento. O produto deve estar com a tag original e sem sinais de uso. Basta entrar em contato via portal de trocas.
+                        </div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300">
+<button class="w-full px-8 py-6 flex justify-between items-center text-left hover:bg-surface-container-high transition-colors">
+<span class="font-headline font-bold text-lg text-on-background">Tabela de tamanhos e medidas</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="px-8 pb-6 text-on-surface-variant font-body leading-relaxed">
+                            Nossas peças possuem modelagem Oversized. Recomendamos conferir a tabela de medidas disponível em cada página de produto. Se preferir um ajuste mais Slim, considere um tamanho abaixo do habitual.
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Aesthetic Closure -->
+<section class="h-[409px] relative overflow-hidden flex items-center justify-center">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="dramatic urban night scene with neon blue lights reflecting on wet asphalt in a modern city street" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT2RKOWa6WeyaLPXaltmgICRAp0msC3rOTt4f83aAl9va9nKWEEab9BHVMP_pJzDBGRiuCwdEsGGVluPPAqahcFeDR-EJYRvdNZ_fslJkWhgOjBHnG1jnygCrzdPrw1TQeTrlFbkdS33hs1SJxfmYBs_J_4aoChsE15qDeOslVpqShsQuVnAWDJb7vzNk9dY0-OL6CQZaZGNZsjXzLQbuVUhPZlkxT9SeSvK2cTLSXsUiOnima4HXwlypEpzyMEt1zIXK7GOzITZI"/>
+<div class="absolute inset-0 bg-[#2b2a51]/60 backdrop-blur-sm"></div>
+<div class="relative z-10 text-center">
+<h3 class="font-headline font-black text-6xl text-white tracking-tighter italic opacity-20">KINETIC ENERGY</h3>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 bg-[#f2efff] flex flex-col items-center gap-8 px-10 w-full">
+<div class="flex flex-col md:flex-row justify-between w-full max-w-7xl gap-10">
+<div class="flex flex-col gap-4">
+<span class="text-xl font-black text-[#2b2a51]">KINETIC</span>
+<p class="font-['Manrope'] text-sm text-[#2b2a51] opacity-60 max-w-xs">
+                    Roupas projetadas para o movimento constante da cultura urbana.
+                </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-10">
+<div class="flex flex-col gap-3">
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[#0846ed]">Links</span>
+<a class="font-['Manrope'] text-sm text-[#2b2a51] opacity-60 hover:opacity-100 hover:text-[#0846ed] transition-all" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-sm text-[#2b2a51] opacity-60 hover:opacity-100 hover:text-[#0846ed] transition-all" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[#0846ed]">Suporte</span>
+<a class="font-['Manrope'] text-sm text-[#2b2a51] opacity-60 hover:opacity-100 hover:text-[#0846ed] transition-all" href="#">Shipping Info</a>
+<a class="font-['Manrope'] text-sm text-[#2b2a51] opacity-60 hover:opacity-100 hover:text-[#0846ed] transition-all" href="#">Returns</a>
+</div>
+</div>
+</div>
+<div class="w-full h-px bg-outline-variant opacity-20"></div>
+<div class="text-center font-['Manrope'] text-sm text-[#2b2a51] opacity-60">
+            © 2024 KINETIC STREETWEAR. ENGINEERED FOR MOTION.
+        </div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-end pb-4 px-6 md:hidden bg-[#f9f5ff]/70 backdrop-blur-xl z-50 rounded-t-[1.5rem] shadow-[0_-12px_32px_rgba(43,42,81,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#2b2a51] p-2 hover:opacity-100 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2b2a51] p-2 hover:opacity-100 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] uppercase tracking-widest">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2b2a51] p-2 hover:opacity-100 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] uppercase tracking-widest">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#0846ed] text-white rounded-full p-3 mb-2 scale-110 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] uppercase tracking-widest hidden">Profile</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Be_Vietnam_Pro:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed": "#28218d",
+              "on-secondary": "#f4f1ff",
+              "surface-variant": "#dcd9ff",
+              "inverse-primary": "#6d88ff",
+              "surface-dim": "#d2d0ff",
+              "inverse-surface": "#0a082f",
+              "primary-fixed-dim": "#718bff",
+              "outline": "#74739e",
+              "on-tertiary-container": "#571f00",
+              "secondary-fixed": "#cfcdff",
+              "surface-container-highest": "#dcd9ff",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f2efff",
+              "surface-container-high": "#e2dfff",
+              "on-background": "#2b2a51",
+              "on-error": "#ffefef",
+              "tertiary-dim": "#893600",
+              "surface-tint": "#0846ed",
+              "background": "#f9f5ff",
+              "on-secondary-container": "#3c38a1",
+              "tertiary-fixed": "#ff9560",
+              "on-primary-fixed-variant": "#00207e",
+              "inverse-on-surface": "#9a99c6",
+              "secondary": "#514eb6",
+              "primary-dim": "#003cd3",
+              "error-container": "#f74b6d",
+              "error": "#b41340",
+              "primary-fixed": "#859aff",
+              "on-surface": "#2b2a51",
+              "tertiary-fixed-dim": "#ff7f39",
+              "secondary-dim": "#4541a9",
+              "on-tertiary-fixed-variant": "#652600",
+              "outline-variant": "#aba9d7",
+              "error-dim": "#a70138",
+              "surface-container": "#e9e5ff",
+              "on-secondary-fixed-variant": "#4642aa",
+              "on-tertiary": "#fff0ea",
+              "surface-bright": "#f9f5ff",
+              "tertiary-container": "#ff9560",
+              "tertiary": "#9c3f00",
+              "primary-container": "#859aff",
+              "on-primary": "#f2f1ff",
+              "on-error-container": "#510017",
+              "primary": "#0846ed",
+              "secondary-fixed-dim": "#bfbdff",
+              "secondary-container": "#cfcdff",
+              "on-surface-variant": "#585781",
+              "surface": "#f9f5ff",
+              "on-primary-fixed": "#000000",
+              "on-primary-container": "#001867",
+              "on-tertiary-fixed": "#2f0e00"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-kinetic-gradient {
+            background: linear-gradient(135deg, #0846ed 0%, #859aff 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- SideNavBar (Predicted Component) -->
+<aside class="h-screen w-64 fixed left-0 top-0 border-r-0 bg-indigo-50 dark:bg-slate-950 flex flex-col py-8 px-4 z-50">
+<div class="mb-10 px-4">
+<h1 class="text-2xl font-black italic tracking-tighter text-blue-700 dark:text-blue-500 font-headline">KINETIC</h1>
+<p class="text-[10px] uppercase tracking-[0.2em] font-label text-on-surface-variant/60 font-bold">Admin Console</p>
+</div>
+<nav class="flex-1 space-y-1">
+<!-- Active Tab: Orders (as per requirement) -->
+<a class="flex items-center gap-3 px-4 py-3 text-blue-700 dark:text-blue-400 font-extrabold border-r-4 border-blue-600 dark:border-blue-500 bg-white/50 dark:bg-white/5 translate-x-1 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-headline tracking-tight">Orders</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-indigo-900/60 dark:text-slate-400 font-medium hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-headline tracking-tight">Inventory</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-indigo-900/60 dark:text-slate-400 font-medium hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-headline tracking-tight">Customers</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-indigo-900/60 dark:text-slate-400 font-medium hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="monitoring">monitoring</span>
+<span class="font-headline tracking-tight">Analytics</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-indigo-900/60 dark:text-slate-400 font-medium hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-headline tracking-tight">Settings</span>
+</a>
+</nav>
+<div class="mt-auto px-4">
+<button class="w-full bg-kinetic-gradient text-on-primary py-4 rounded-full font-label font-bold text-sm tracking-widest shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                New Drop
+            </button>
+</div>
+</aside>
+<!-- TopNavBar (Predicted Component) -->
+<header class="fixed top-0 right-0 w-[calc(100%-16rem)] z-40 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl flex justify-between items-center px-10 h-20 shadow-sm dark:shadow-none font-headline font-semibold">
+<div class="flex items-center flex-1">
+<div class="relative w-full max-w-md group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant/50" data-icon="search">search</span>
+<input class="w-full pl-12 pr-4 py-2.5 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-blue-500/20 font-body text-sm transition-all placeholder:text-on-surface-variant/40" placeholder="Search orders, clients, items..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-6 text-indigo-900/40 dark:text-slate-500">
+<button class="hover:text-blue-600 dark:hover:text-blue-400 transition-all relative">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+<span class="absolute top-0 right-0 w-2 h-2 bg-tertiary rounded-full"></span>
+</button>
+<button class="hover:text-blue-600 dark:hover:text-blue-400 transition-all">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</button>
+<div class="flex items-center gap-3 pl-6 border-l border-outline-variant/20">
+<div class="text-right">
+<p class="text-sm font-bold text-on-surface">Alex Rivera</p>
+<p class="text-[10px] text-on-surface-variant font-label">Lead Curator</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a professional male editor with short hair and modern glasses in a minimalist bright studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWCtvZ5VhF8ZKwfTc5raDNSl0qcDOO1_HH4EYbmuBJtSUKyiPmX_I-aKAffyO-HcT4dNe9e3DZQV0kDcuv-L5rSIPGLlDp4CUX1cACdnGNeu-IpxfGIB9C1R4cktgoIfd7zyyO3OVFYRuA6Jt7g7LG-36ALRjyQhAHrj-cQ3sKHPVr-6Lc8SXmhIJehlfo_2sFhGNWnFVUxGrzPVRla4mG78IPYV1Ewe-gHsoPEfQ_OSnlIjtqa0KKfby1bBQJ4m92GEqrz31er4U"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="ml-64 pt-20 p-10 min-h-screen">
+<section class="max-w-7xl mx-auto space-y-10">
+<!-- Page Header -->
+<div class="flex justify-between items-end">
+<div>
+<h2 class="text-4xl font-headline font-extrabold tracking-tight text-on-background">Gerenciamento de <span class="text-primary italic">Pedidos</span></h2>
+<p class="text-on-surface-variant mt-2 font-body">Visão geral do ecossistema comercial KINETIC</p>
+</div>
+<div class="flex gap-4">
+<button class="px-6 py-3 bg-surface-container-high rounded-full font-label font-semibold text-primary hover:bg-surface-container-highest transition-colors">Exportar CSV</button>
+<button class="px-8 py-3 bg-kinetic-gradient text-on-primary rounded-full font-label font-bold tracking-tight shadow-xl shadow-primary/20">Adicionar Produto</button>
+</div>
+</div>
+<!-- Bento Metrics Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-transparent hover:border-primary-fixed transition-all group">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-primary/5 rounded-lg text-primary">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+</div>
+<span class="text-xs font-label font-bold text-green-600 bg-green-50 px-2 py-1 rounded-full">+12%</span>
+</div>
+<p class="text-sm font-label text-on-surface-variant font-medium">Total Vendas</p>
+<h3 class="text-2xl font-headline font-extrabold text-on-background mt-1">R$ 45.900,00</h3>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-transparent hover:border-tertiary-fixed transition-all group">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-tertiary/5 rounded-lg text-tertiary">
+<span class="material-symbols-outlined" data-icon="pending_actions">pending_actions</span>
+</div>
+<span class="text-xs font-label font-bold text-tertiary bg-tertiary-container/20 px-2 py-1 rounded-full">Alerta</span>
+</div>
+<p class="text-sm font-label text-on-surface-variant font-medium">Pedidos Pendentes</p>
+<h3 class="text-2xl font-headline font-extrabold text-on-background mt-1">12</h3>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-transparent hover:border-primary-fixed transition-all group">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-secondary/5 rounded-lg text-secondary">
+<span class="material-symbols-outlined" data-icon="person_add">person_add</span>
+</div>
+<span class="text-xs font-label font-bold text-primary bg-primary-container/20 px-2 py-1 rounded-full">+48hoje</span>
+</div>
+<p class="text-sm font-label text-on-surface-variant font-medium">Novos Clientes</p>
+<h3 class="text-2xl font-headline font-extrabold text-on-background mt-1">48</h3>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-transparent hover:border-primary-fixed transition-all group">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-primary/5 rounded-lg text-primary">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+</div>
+<span class="text-xs font-label font-bold text-green-600 bg-green-50 px-2 py-1 rounded-full">Meta OK</span>
+</div>
+<p class="text-sm font-label text-on-surface-variant font-medium">Taxa de Conversão</p>
+<h3 class="text-2xl font-headline font-extrabold text-on-background mt-1">3.2%</h3>
+</div>
+</div>
+<!-- Table Section -->
+<div class="bg-surface-container-lowest rounded-[2rem] overflow-hidden shadow-sm border border-outline-variant/10">
+<div class="p-8 border-b border-surface-container flex flex-wrap justify-between items-center gap-4">
+<h4 class="text-xl font-headline font-extrabold">Lista de Pedidos</h4>
+<div class="flex gap-3">
+<div class="relative">
+<select class="appearance-none pl-4 pr-10 py-2 bg-surface-container-low border-none rounded-xl font-label text-xs font-bold text-on-surface cursor-pointer focus:ring-0">
+<option>Todos os Status</option>
+<option>Pago</option>
+<option>Pendente</option>
+<option>Enviado</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant text-sm" data-icon="expand_more">expand_more</span>
+</div>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-low rounded-xl text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="filter_list">filter_list</span>
+<span class="font-label text-xs font-bold">Filtros</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/50">
+<th class="px-8 py-5 font-label text-[10px] uppercase tracking-widest text-on-surface-variant/70 font-black">ID do Pedido</th>
+<th class="px-8 py-5 font-label text-[10px] uppercase tracking-widest text-on-surface-variant/70 font-black">Cliente</th>
+<th class="px-8 py-5 font-label text-[10px] uppercase tracking-widest text-on-surface-variant/70 font-black">Data</th>
+<th class="px-8 py-5 font-label text-[10px] uppercase tracking-widest text-on-surface-variant/70 font-black">Valor</th>
+<th class="px-8 py-5 font-label text-[10px] uppercase tracking-widest text-on-surface-variant/70 font-black">Status</th>
+<th class="px-8 py-5 font-label text-[10px] uppercase tracking-widest text-on-surface-variant/70 font-black text-right">Ações</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Row 1 -->
+<tr class="hover:bg-background/50 transition-colors group">
+<td class="px-8 py-6 font-headline font-bold text-primary">#3421</td>
+<td class="px-8 py-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary-container/30 flex items-center justify-center text-primary font-bold text-xs">JS</div>
+<span class="font-semibold text-on-surface">João Silva</span>
+</div>
+</td>
+<td class="px-8 py-6 text-sm text-on-surface-variant font-medium">24 Jan, 2024</td>
+<td class="px-8 py-6 font-headline font-bold">R$ 289,90</td>
+<td class="px-8 py-6">
+<span class="px-3 py-1.5 rounded-full bg-orange-100 text-orange-700 text-[10px] font-bold uppercase tracking-wider font-label inline-flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-orange-600"></span>
+                                        Pendente
+                                    </span>
+</td>
+<td class="px-8 py-6 text-right">
+<button class="p-2 hover:bg-surface-container rounded-lg transition-colors text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-background/50 transition-colors group">
+<td class="px-8 py-6 font-headline font-bold text-primary">#3420</td>
+<td class="px-8 py-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/30 flex items-center justify-center text-secondary font-bold text-xs">MO</div>
+<span class="font-semibold text-on-surface">Maria Oliveira</span>
+</div>
+</td>
+<td class="px-8 py-6 text-sm text-on-surface-variant font-medium">24 Jan, 2024</td>
+<td class="px-8 py-6 font-headline font-bold">R$ 1.150,00</td>
+<td class="px-8 py-6">
+<span class="px-3 py-1.5 rounded-full bg-green-100 text-green-700 text-[10px] font-bold uppercase tracking-wider font-label inline-flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-green-600"></span>
+                                        Pago
+                                    </span>
+</td>
+<td class="px-8 py-6 text-right">
+<button class="p-2 hover:bg-surface-container rounded-lg transition-colors text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-background/50 transition-colors group">
+<td class="px-8 py-6 font-headline font-bold text-primary">#3419</td>
+<td class="px-8 py-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface-variant font-bold text-xs">RC</div>
+<span class="font-semibold text-on-surface">Ricardo Costa</span>
+</div>
+</td>
+<td class="px-8 py-6 text-sm text-on-surface-variant font-medium">23 Jan, 2024</td>
+<td class="px-8 py-6 font-headline font-bold">R$ 450,20</td>
+<td class="px-8 py-6">
+<span class="px-3 py-1.5 rounded-full bg-blue-100 text-blue-700 text-[10px] font-bold uppercase tracking-wider font-label inline-flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                                        Enviado
+                                    </span>
+</td>
+<td class="px-8 py-6 text-right">
+<button class="p-2 hover:bg-surface-container rounded-lg transition-colors text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-background/50 transition-colors group">
+<td class="px-8 py-6 font-headline font-bold text-primary">#3418</td>
+<td class="px-8 py-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-error-container/20 flex items-center justify-center text-error font-bold text-xs">AL</div>
+<span class="font-semibold text-on-surface">Ana Lima</span>
+</div>
+</td>
+<td class="px-8 py-6 text-sm text-on-surface-variant font-medium">23 Jan, 2024</td>
+<td class="px-8 py-6 font-headline font-bold">R$ 129,90</td>
+<td class="px-8 py-6">
+<span class="px-3 py-1.5 rounded-full bg-red-100 text-red-700 text-[10px] font-bold uppercase tracking-wider font-label inline-flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
+                                        Cancelado
+                                    </span>
+</td>
+<td class="px-8 py-6 text-right">
+<button class="p-2 hover:bg-surface-container rounded-lg transition-colors text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination -->
+<div class="p-8 bg-surface-container-low/30 flex justify-between items-center">
+<p class="text-xs font-label font-bold text-on-surface-variant/60">Mostrando 4 de 1.250 pedidos</p>
+<div class="flex gap-2">
+<button class="w-10 h-10 flex items-center justify-center rounded-xl bg-surface-container-low text-on-surface-variant hover:text-primary transition-colors disabled:opacity-30" disabled="">
+<span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-xl bg-primary text-on-primary font-headline font-bold shadow-md shadow-primary/30">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors font-headline font-bold">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors font-headline font-bold">3</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-xl bg-surface-container-low text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Lookbook Style Secondary Grid -->
+<div class="grid grid-cols-12 gap-8">
+<!-- Trending Collections Card -->
+<div class="col-span-7 bg-surface-container-low p-10 rounded-[2.5rem] relative overflow-hidden flex flex-col justify-end min-h-[350px]">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60 mix-blend-overlay" data-alt="high-fashion sneakers arranged artistically on a glass podium with blue neon lighting and sharp reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLRQ6qyFjQ-7EAPMMCo36M0AC5CfO4Hygf_izjQClcPg8lbsQyopKQh4V8gVq3ZDy6k_OSWuLLzYHLL_cyWAuKLgBGP7fOXisu2cfRvuc5OzJ8VWOoX2nkXIWvGrf5j2ngwu8dw8CDMpaxeLgqZL45tRbOm6Js9J0eRCRpLQCPBfof4ZsgD9BohzKNK8tFXR60CiAu-4MYFUI5trKWiYXa5IMMDsUd9SUVyL-GT9hE2tKzqSoaUlN506oyxGjydvc8ArhcONs8LNI"/>
+</div>
+<div class="relative z-10">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter mb-4 inline-block">Insight de Vendas</span>
+<h3 class="text-4xl font-headline font-extrabold text-on-background leading-tight max-w-sm">Coleção <span class="italic text-primary">Cyber-Spring</span> liderando o inventário.</h3>
+<p class="text-on-surface-variant/80 font-body mt-4 max-w-md">Os dados mostram um aumento de 42% na demanda por calçados técnicos este mês. Prepare o próximo drop.</p>
+</div>
+</div>
+<!-- Small Utility Cards -->
+<div class="col-span-5 grid grid-rows-2 gap-8">
+<div class="bg-primary-container text-on-primary-container p-8 rounded-[2rem] flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl" data-icon="bolt">bolt</span>
+<span class="font-label font-black text-xs">ALERTA DE ESTOQUE</span>
+</div>
+<div>
+<h4 class="text-2xl font-headline font-extrabold tracking-tight">8 Itens esgotando</h4>
+<p class="text-sm font-body opacity-70 mt-1">Reabasteça para evitar perda de conversão.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-8 rounded-[2rem] flex flex-col justify-between group">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="support_agent">support_agent</span>
+</div>
+<span class="bg-tertiary text-on-tertiary text-[10px] font-bold px-2 py-0.5 rounded-full">3 Ativos</span>
+</div>
+<div>
+<h4 class="text-xl font-headline font-extrabold text-on-background">Suporte ao Cliente</h4>
+<p class="text-sm font-body text-on-surface-variant mt-1">Verificar 15 novos tickets de suporte.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</body></html>

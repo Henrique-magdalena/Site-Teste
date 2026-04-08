@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KINETIC | Premium Streetwear Detail</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Manrope:wght@200..800&amp;family=Be+Vietnam+Pro:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#2f0e00",
+              "tertiary-fixed": "#ff9560",
+              "on-secondary": "#f4f1ff",
+              "surface-tint": "#0846ed",
+              "secondary-container": "#cfcdff",
+              "on-tertiary": "#fff0ea",
+              "on-primary-fixed": "#000000",
+              "primary-container": "#859aff",
+              "error-container": "#f74b6d",
+              "on-background": "#2b2a51",
+              "inverse-surface": "#0a082f",
+              "on-error-container": "#510017",
+              "surface-container-lowest": "#ffffff",
+              "inverse-primary": "#6d88ff",
+              "primary": "#0846ed",
+              "surface-dim": "#d2d0ff",
+              "error-dim": "#a70138",
+              "on-primary-container": "#001867",
+              "primary-dim": "#003cd3",
+              "on-tertiary-fixed-variant": "#652600",
+              "tertiary-dim": "#893600",
+              "tertiary": "#9c3f00",
+              "surface-container-low": "#f2efff",
+              "surface-container-high": "#e2dfff",
+              "surface": "#f9f5ff",
+              "background": "#f9f5ff",
+              "on-tertiary-container": "#571f00",
+              "tertiary-container": "#ff9560",
+              "secondary-fixed": "#cfcdff",
+              "surface-container": "#e9e5ff",
+              "tertiary-fixed-dim": "#ff7f39",
+              "inverse-on-surface": "#9a99c6",
+              "on-secondary-container": "#3c38a1",
+              "surface-variant": "#dcd9ff",
+              "surface-container-highest": "#dcd9ff",
+              "on-secondary-fixed": "#28218d",
+              "on-surface": "#2b2a51",
+              "on-primary": "#f2f1ff",
+              "on-error": "#ffefef",
+              "on-primary-fixed-variant": "#00207e",
+              "surface-bright": "#f9f5ff",
+              "primary-fixed-dim": "#718bff",
+              "outline": "#74739e",
+              "error": "#b41340",
+              "secondary-dim": "#4541a9",
+              "outline-variant": "#aba9d7",
+              "on-surface-variant": "#585781",
+              "primary-fixed": "#859aff",
+              "secondary-fixed-dim": "#bfbdff",
+              "secondary": "#514eb6",
+              "on-secondary-fixed-variant": "#4642aa"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #0846ed 0%, #859aff 100%);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-indigo-50/70 dark:bg-slate-950/70 backdrop-blur-xl transition-all duration-300">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black italic text-indigo-900 dark:text-indigo-100 font-headline tracking-tight">KINETIC</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-indigo-900/60 font-headline font-bold tracking-tight transition-all duration-300 hover:opacity-80" href="#">Início</a>
+<a class="text-blue-600 border-b-2 border-blue-600 pb-1 font-headline font-bold tracking-tight transition-all duration-300 hover:opacity-80" href="#">Produtos</a>
+<a class="text-indigo-900/60 font-headline font-bold tracking-tight transition-all duration-300 hover:opacity-80" href="#">Categoria</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="transition-transform scale-95 active:scale-90 p-2 text-indigo-900/70">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="transition-transform scale-95 active:scale-90 p-2 text-indigo-900/70">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20 px-4 md:px-8 max-w-7xl mx-auto">
+<!-- Breadcrumb -->
+<div class="mb-8 flex items-center gap-2 text-xs font-label uppercase tracking-widest text-on-surface-variant">
+<span>Home</span>
+<span class="material-symbols-outlined text-[10px]">chevron_right</span>
+<span>Shop</span>
+<span class="material-symbols-outlined text-[10px]">chevron_right</span>
+<span class="text-primary font-bold">Over-Sized Kinetic Tee</span>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left: Image Gallery (Asymmetric) -->
+<div class="lg:col-span-7 space-y-6">
+<div class="relative aspect-[4/5] bg-surface-container rounded-xl overflow-hidden group">
+<img alt="Kinetic Tee Front" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="studio editorial shot of a high-quality white heavyweight t-shirt on a minimalist background with sharp dramatic shadows and soft texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFTKcOCPTHk4t3Nj7hSeYlgz_GQpF4ChMMW9zHFM3oQO_J7Mj13lWOJ-k1mFdKkXO7TZsHWMBidiYZLI43wRw6Lhk9tdBZB1q2wzl8jECG1H21H-UZlJ7Mm6NCOpo5ehSpXjW5_mLBruDe15sJXbkQ83NKGNnCssqMKVq-kXWcIL3kgy7O7iu-N0S4Mrz2r9pikeyS_HJQNaj_aVI8UcCZzgRxuzLz6gRWob97QFfsuXMEyQvS-JiL3NmOH2CthwAbTuYRvtGw3GQ"/>
+<div class="absolute top-6 left-6">
+<span class="bg-tertiary text-white px-4 py-1 rounded-full text-[10px] font-label font-bold uppercase tracking-tighter">Limited Edition</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<div class="aspect-square bg-surface-container rounded-xl overflow-hidden cursor-pointer">
+<img alt="Detail 1" class="w-full h-full object-cover hover:opacity-80 transition-opacity" data-alt="close-up detail of high-quality cotton fabric weave and premium stitching on a white streetwear garment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVoTYWQCU90M4ug5sjPWa_hIxCvLbLh8iuThDalDczdLx_IYqIuc3NwXTNknoajP43BsEqBn9lpNiQCwPnWkvkyapbbzUQmE1jqsUugaaA9bf8XPKpDBHCmdKhfI_6AdXcPlLm_Anx8yAAViWk8VX80YWtLDiPSfYDLAPjKA-3Znkil5wvnYm8-CmJAw9Mt3b2_feYXUvi3RoTu_5iNY18Gzmp7CzIal1ju5zl9SGRaKMbsw8xMr4KPpknl3BPGaPQlSw0ZACD3XY"/>
+</div>
+<div class="aspect-square bg-surface-container rounded-xl overflow-hidden cursor-pointer">
+<img alt="Detail 2" class="w-full h-full object-cover hover:opacity-80 transition-opacity" data-alt="lifestyle shot of a person wearing a white t-shirt styled with silver jewelry in an urban setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWydVVwTl7w7tk7QYEUcN5MHT7NQ3EBnTRDW54HJ9MAhyPgcRtcsjD31JZPZJ3we1sSq4z7_g9Lb0tYoSg_Co4ZRxr1iflMOjDMSpdDUIFQwiLUIA7d8l_HFhfTkASFlT5Rmiqczbpv51AfmKkJ21tPId-ycKYkVxX60qm_TVEoXN_8LBJiJH95nml0pk57qd5cVJRROFcLNsEK6oLS8SpJKg7UoTfb1A_jIadnA3vSjIuH4ypTYtjgm0D6ZJQ75TagQkXiA4YyvE"/>
+</div>
+<div class="aspect-square bg-surface-container rounded-xl overflow-hidden cursor-pointer border-2 border-primary">
+<img alt="Detail 3" class="w-full h-full object-cover hover:opacity-80 transition-opacity" data-alt="back view of a white oversized premium t-shirt showing the drape and silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVuDAKaFOfWLyOfmemAjuUUjAeLTpf9F49DSqj1QzCJGtQjEBi9peeXXt0db4_1Jent9y4f32XyexjX6W3LkIYqXMjS_LSBp-QYED-qx2rne8i3eX3eGnBSflc_D8B2tX-9ceicsPJYrCcBB5TiRGpQFA5Irc-Y75c7IA-a8US9Oo3mgw6HHupHiX7RxYPFl-p6Xnn4DTnNnwdhb-HSbUg9fiJv-FBkva_ZNZ8tdZ_1SR04TTXRKW_NUtzKlK1RROAjVGVywfEXu8"/>
+</div>
+</div>
+</div>
+<!-- Right: Product Info -->
+<div class="lg:col-span-5 sticky top-32">
+<header class="mb-8">
+<h1 class="text-4xl md:text-5xl font-headline font-black text-on-surface tracking-tighter leading-none mb-4">OVER-SIZED KINETIC TEE</h1>
+<div class="flex items-center gap-4">
+<span class="text-3xl font-headline font-bold text-primary">R$ 289,90</span>
+<span class="text-on-surface-variant line-through font-body text-lg">R$ 349,00</span>
+</div>
+</header>
+<!-- Color Selection -->
+<div class="mb-8">
+<span class="block text-[10px] font-label uppercase tracking-widest text-on-surface-variant mb-4">Escolha a Cor: <span class="text-on-surface font-bold">Arctic White</span></span>
+<div class="flex gap-3">
+<button class="w-10 h-10 rounded-full border-2 border-primary p-0.5"><span class="block w-full h-full rounded-full bg-white shadow-inner"></span></button>
+<button class="w-10 h-10 rounded-full border-2 border-transparent p-0.5 hover:border-outline-variant transition-colors"><span class="block w-full h-full rounded-full bg-slate-900"></span></button>
+<button class="w-10 h-10 rounded-full border-2 border-transparent p-0.5 hover:border-outline-variant transition-colors"><span class="block w-full h-full rounded-full bg-indigo-900"></span></button>
+</div>
+</div>
+<!-- Size Selection -->
+<div class="mb-10">
+<div class="flex justify-between items-center mb-4">
+<span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant">Tamanho</span>
+<button class="text-[10px] font-label uppercase tracking-widest text-primary font-bold underline">Guia de Medidas</button>
+</div>
+<div class="grid grid-cols-4 gap-3">
+<button class="py-3 rounded-xl border border-outline-variant text-on-surface font-label font-bold hover:bg-surface-container-low transition-colors">P</button>
+<button class="py-3 rounded-xl border-2 border-primary bg-primary-container/10 text-primary font-label font-bold">M</button>
+<button class="py-3 rounded-xl border border-outline-variant text-on-surface font-label font-bold hover:bg-surface-container-low transition-colors">G</button>
+<button class="py-3 rounded-xl border border-outline-variant text-on-surface font-label font-bold hover:bg-surface-container-low transition-colors">GG</button>
+</div>
+</div>
+<!-- CTA -->
+<div class="space-y-4">
+<button class="kinetic-gradient w-full py-5 rounded-full text-white font-label font-black uppercase tracking-widest text-sm shadow-xl hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-3">
+<span class="material-symbols-outlined">shopping_bag</span>
+                        Adicionar ao Carrinho
+                    </button>
+<button class="w-full py-4 rounded-full border border-outline-variant text-on-surface font-label font-bold uppercase tracking-widest text-xs hover:bg-surface-container transition-colors">
+                        Lista de Desejos
+                    </button>
+</div>
+<!-- Mini Perks -->
+<div class="mt-8 grid grid-cols-2 gap-4">
+<div class="flex items-center gap-3 p-4 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+<span class="text-[10px] font-label uppercase font-bold tracking-tight leading-tight">Frete Grátis<br/>acima de R$499</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-primary">autorenew</span>
+<span class="text-[10px] font-label uppercase font-bold tracking-tight leading-tight">Troca Fácil<br/>30 dias grátis</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Description Section -->
+<section class="mt-32 pt-20 border-t border-surface-container-highest">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-4">
+<h2 class="text-3xl font-headline font-black text-on-surface tracking-tighter mb-6 uppercase">DNA da Peça</h2>
+<p class="text-on-surface-variant font-body leading-relaxed mb-8">
+                        Desenvolvida para quem exige o máximo em conforto e estética. A Oversized Kinetic Tee utiliza malha 100% algodão premium de alta gramatura (240g/m²), proporcionando um caimento estruturado que não perde a forma.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 text-sm font-label uppercase font-bold text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Gola em anel de 3cm
+                        </li>
+<li class="flex items-center gap-4 text-sm font-label uppercase font-bold text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Costuras reforçadas ombro a ombro
+                        </li>
+<li class="flex items-center gap-4 text-sm font-label uppercase font-bold text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Toque aveludado (Peached Finish)
+                        </li>
+</ul>
+</div>
+<div class="lg:col-span-8">
+<div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+<div class="flex items-start justify-between mb-12">
+<div>
+<h3 class="text-5xl font-headline font-black text-primary leading-none">4.9</h3>
+<div class="flex text-tertiary mt-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="text-[10px] font-label uppercase text-on-surface-variant font-bold mt-2 inline-block">124 Avaliações de Clientes</span>
+</div>
+<button class="bg-surface-container-highest px-6 py-3 rounded-full text-xs font-label font-black uppercase tracking-widest hover:bg-outline-variant transition-colors">Escrever Review</button>
+</div>
+<!-- Review Grid -->
+<div class="space-y-8">
+<div class="border-b border-surface-variant pb-8">
+<div class="flex justify-between items-center mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-headline font-bold">JD</div>
+<div>
+<div class="text-sm font-label font-black text-on-surface uppercase">João D.</div>
+<div class="text-[10px] text-on-surface-variant uppercase font-bold">Verificado • 2 dias atrás</div>
+</div>
+</div>
+<div class="flex text-tertiary scale-75">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-on-surface-variant font-body leading-relaxed">
+                                    Malha sensacional. Já comprei várias marcas nacionais de streetwear e essa superou todas no caimento. O branco é realmente puro, nada de transparência.
+                                </p>
+</div>
+<div class="pb-8">
+<div class="flex justify-between items-center mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-headline font-bold">ML</div>
+<div>
+<div class="text-sm font-label font-black text-on-surface uppercase">Marina L.</div>
+<div class="text-[10px] text-on-surface-variant uppercase font-bold">Verificado • 1 semana atrás</div>
+</div>
+</div>
+<div class="flex text-tertiary scale-75">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+</div>
+<p class="text-on-surface-variant font-body leading-relaxed">
+                                    Comprei o tamanho P e ficou perfeito como oversized (tenho 1,65m). A entrega foi super rápida em SP.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 bg-indigo-900 dark:bg-slate-950 flex flex-col items-center gap-4 py-12 px-6">
+<div class="text-lg font-bold text-white uppercase font-headline tracking-widest">KINETIC</div>
+<div class="flex gap-8 my-4">
+<a class="text-indigo-200/50 font-label text-xs uppercase tracking-widest hover:text-orange-500 transition-colors" href="#">Privacy Policy</a>
+<a class="text-indigo-200/50 font-label text-xs uppercase tracking-widest hover:text-orange-500 transition-colors" href="#">Terms of Service</a>
+<a class="text-indigo-200/50 font-label text-xs uppercase tracking-widest hover:text-orange-500 transition-colors" href="#">Shipping</a>
+</div>
+<div class="text-indigo-200/30 font-label text-[10px] tracking-[0.2em] uppercase">
+            © 2024 KINETIC STREETWEAR. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+</body></html>
